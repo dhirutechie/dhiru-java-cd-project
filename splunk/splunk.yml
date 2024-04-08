@@ -26,8 +26,6 @@ spec:
               value: "Admin123!"
           ports:
             - containerPort: 8000
-      imagePullSecrets:
-        - name: regcred
       platforms:
         - architecture: "amd64"
           os: "linux"
