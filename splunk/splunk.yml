@@ -16,7 +16,7 @@ spec:
         app: splunk
     spec:
       containers:
-        - image: splunk/splunk:latest
+        - image: splunk/splunk:latest-linux-amd64
           imagePullPolicy: "Always"
           name: splunk
           env:
@@ -26,6 +26,3 @@ spec:
               value: "Admin123!"
           ports:
             - containerPort: 8000
-      platforms:
-        - architecture: "amd64"
-          os: "linux"
